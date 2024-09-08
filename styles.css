@@ -1,0 +1,49 @@
+/* Styles for the body element to center content vertically and horizontally */
+body {
+    font-family: Arial, sans-serif; /* Set the font family to Arial or a sans-serif fallback */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Set the height to fill the viewport */
+    margin: 0; /* Remove default margin */
+    background-color: #f0f0f0; /* Set a light grey background color */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Styles for the container element that holds the main content */
+.container {
+    background: white; /* Set background color to white */
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 8px; /* Round the corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    text-align: center; /* Center align text */
+    max-width: 600px; /* Set a maximum width */
+    width: 80%; /* Set width to 80% of the parent element */
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+/* Styles for input fields and buttons */
+input,
+button {
+    margin: 10px 0; /* Add margin at the top and bottom */
+    padding: 10px; /* Add padding inside */
+    width: calc(100% - 20px); /* Set width to fill the container minus padding */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Styles for the output div where generated content is displayed */
+#output {
+    margin-top: 20px; /* Add margin at the top */
+    text-align: left; /* Align text to the left */
+    padding: 10px; /* Add padding inside */
+    background-color: beige; /* Set a beige background color */
+    border-radius: 8px; /* Round the corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    overflow-y: auto; /* Allow vertical scrolling */
+    max-height: 60vh; /* Set a maximum height */
+}
+
+/* Styles for the preformatted text inside the output div */
+#output pre {
+    white-space: pre-wrap; /* Wrap the text inside the pre element */
+}
